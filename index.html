@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reaction Time</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        padding: 1vh;
+      }
+      #reactionButton {
+        width: 10vw;
+        height: 10vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">⚡ Reaction time</h1>
+    <div>
+      <input type="text" id="nameInput" />
+      <button onclick="start()" id="start">Start</button>
+      <button onclick="resetScores()" id="resetHighScore">
+        Reset High Score
+      </button>
+    </div>
+    <h1 id="stats">Нэрээ бичээд «Эхлэх» дар</h1>
+    <button onclick="react()" id="reactionButton"></button>
+    <script src="./script.js"></script>
+  </body>
+</html>
